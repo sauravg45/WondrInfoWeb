@@ -98,6 +98,12 @@
     align-items: center;
     max-width: 740px;
     margin: 0 auto;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 20vh;
+    transition: 1s;
 }
 
 header {
@@ -142,6 +148,10 @@ header {
   width: calc(100vw - 50px);
   transition: 1s;
   /* animation: expand 1s ease-out; */
+}
+.expanded .mainContainer {
+  color: black;
+  transition: 1s;
 }
 .navControl:before {
     position: absolute;
