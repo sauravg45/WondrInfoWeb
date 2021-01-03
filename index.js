@@ -26,3 +26,9 @@ anime.timeline({easing: 'easeOutExpo'})
     duration: 950,
     delay: (el, i) => 70*i
   });
+
+  $(document).ready(function(){
+    $(".controlRhombus").click(function(){
+      $(".bodyClass").toggleClass("expanded");
+    });
+  });
